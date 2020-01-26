@@ -1,13 +1,24 @@
 <template>
   <div id="app">
-    <Home />
+    <AppHeader />
+    <LandingPage />
+    <BookDescription />
+    <AppFooter />
   </div>
 </template>
 <script>
-import Home from "./views/Home.vue";
+// @ is an alias to /src
+import AppHeader from "@/components/AppHeader.vue";
+import LandingPage from "@/components/LandingPage.vue";
+import AppFooter from "@/components/AppFooter.vue";
+import BookDescription from "./views/BookDescription.vue";
+
 export default {
   components: {
-    Home
+    AppHeader,
+    LandingPage,
+    AppFooter,
+    BookDescription
   }
 };
 </script>
